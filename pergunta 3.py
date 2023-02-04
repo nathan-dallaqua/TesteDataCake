@@ -2,7 +2,7 @@ from time import sleep
 
 sim=[]
 arr=[1, 15, 2, 7, 2, 5, 7, 1, 4]
-print('Esté é o array informado:[1, 15, 2, 7, 2, 5, 7, 1, 4]')
+print(f'Esté é o array informado:{arr}')
 sleep(1.5)
 
 
