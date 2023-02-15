@@ -1,3 +1,4 @@
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -21,7 +22,10 @@ if __name__ == '__main__':
     tree.root.left.right = Node('Limão')
     tree.root.right = Node('Pera')
     tree.root.right.left = Node('Abacaxi')
-
+    tree.root.right.left.left = Node('Laranja')
+    tree.root.right.left.left.left = Node('Banana')
+    tree.root.right.left.left.right = Node('Cebola')
+  
 fruta=int(input('''Temos uma árvore binária onde possui as frutas:
 1 - Maçã
 2 - Morango
@@ -34,7 +38,28 @@ fruta=int(input('''Temos uma árvore binária onde possui as frutas:
 9 - Cebola
 Informe o número da fruta que deseja e elá será buscada nesta árvore:
 '''))
-if fruta == 1:
-    print(tree.root)
-print(tree.root.left)
-print(tree.root.right.left)
+
+
+if fruta == 2:
+  print(tree.root, '=>', tree.root.left)
+  
+elif fruta == 3:
+  print(tree.root,'=>', tree.root.left, '=>', tree.root.left.left)
+
+elif fruta == 4:
+  print(tree.root,'=>', tree.root.left, '=>', tree.root.left.right)
+
+elif fruta == 5:
+  print(tree.root,'=>', tree.root.right)
+
+elif fruta == 6:
+  print(tree.root,'=>', tree.root.right,'=>', tree.root.right.left)
+
+elif fruta == 7:
+  print (tree.root,'=>', tree.root.right,'=>', tree.root.right.left, '=>', tree.root.right.left.left)
+
+elif fruta == 8:
+  print (tree.root,'=>', tree.root.right,'=>', tree.root.right.left, '=>', tree.root.right.left.left,'=>',tree.root.right.left.left.left )
+
+elif fruta == 9:
+  print (tree.root,'=>', tree.root.right,'=>', tree.root.right.left, '=>', tree.root.right.left.left,'=>',tree.root.right.left.left.right)
