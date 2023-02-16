@@ -37,7 +37,7 @@ while True:
   7 - Laranja
   8 - Banana
   9 - Cebola
-  Informe o número da fruta que deseja e elá será buscada nesta árvore:
+  Informe o número da fruta que deseja para ser buscada:
   '''))
   
   
