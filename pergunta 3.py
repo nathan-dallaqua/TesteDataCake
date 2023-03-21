@@ -24,6 +24,7 @@ for x in range (0,9):
             sim.append(+1)
             break
 if len(sim) > 0:
-    print('True')
+    sim = True
 else:
-    print('False')
+    sim = False
+print(sim)
