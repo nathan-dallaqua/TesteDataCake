@@ -1,6 +1,5 @@
 from time import sleep
 arr=[9, 2, 3, 1, 4]
-novo=[]
 print(f'Os números faltando na array:{arr}são: ')
 for n in range (1,9):
     for c in arr:
